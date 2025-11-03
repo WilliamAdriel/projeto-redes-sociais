@@ -23,14 +23,26 @@ main {
     height: 100vh;
 }
 
+/* Moldura do celular */
 section#telefone {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-    height: 644px;
-    width: 322px;
+    height: 550px;
+    width: 300px;
     background: url('../imagens/frame-iphone.png') no-repeat center center;
     background-size: contain;
+}
+
+/* Tela interna (iframe) */
+iframe#tela {
+    position: absolute;
+    top: 67px;   /* ajuste fino vertical */
+    left: 34px;  /* ajuste fino horizontal */
+    height: 416px;
+    width: 232px;
+    border: none; /* remove borda do iframe */
+    border-radius: 5px;
+    overflow: hidden;
 }
